@@ -1,4 +1,4 @@
-import { textWithData } from "../text.js";
+import { textWithData } from "../tools/text.js";
 
 export function block_button_component(item, data) {
     let new_item = document.createElement("div");
