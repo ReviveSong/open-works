@@ -1,4 +1,4 @@
-import { build } from "./builder.js";
+import { build } from "../builder.mjs";
 
 // This script is to be used with creator.html.
 // The purpose of this script is to make the creator page functional, this is not required for the builder to run.
@@ -28,10 +28,15 @@ import { build } from "./builder.js";
             "1": "Hello",
             "2": "World",
             "sitename": "SiteMachine"
-        }
+        },
+        metadata: [
+            {"type": "title", "content": "Home - $sitename"}
+        ]
     };
-
+    
     const APP = document.getElementById("app");
 
     build(APP, current);
+
+    return true;
 }()

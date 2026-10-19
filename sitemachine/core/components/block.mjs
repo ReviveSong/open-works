@@ -1,4 +1,4 @@
-import { textWithData } from "../tools/text.js";
+import { textWithData } from "../tools/text.mjs";
 
 export function block_component(item, data) {
     let new_item = document.createElement("div");

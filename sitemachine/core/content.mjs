@@ -1,7 +1,7 @@
-import { block_component } from "./components/block.js";
-import { block_button_component } from "./components/block_button.js";
-import { divider_component } from "./components/divider.js";
-import { line_component } from "./components/line.js";
+import { block_component } from "./components/block.mjs";
+import { block_button_component } from "./components/block_button.mjs";
+import { divider_component } from "./components/divider.mjs";
+import { line_component } from "./components/line.mjs";
 
 /**
  * This function relays the function call to the correct function.

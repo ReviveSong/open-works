@@ -1,4 +1,4 @@
-import { content_relay } from "./core/content.js";
+import { content_relay } from "./core/content.mjs";
 
 /**
  * This is the primary builder function. This function builds the page and appends it into the target element.
@@ -8,7 +8,7 @@ import { content_relay } from "./core/content.js";
  * @returns 
  */
 function build(target, map) {
-    if (!target instanceof HTMLElement) return;
+    //if (!target instanceof HTMLElement) return;
     if (map.content.length < 1) return;
     
     let holding_container = document.createElement("div");
@@ -25,7 +25,3 @@ function build(target, map) {
 }
 
 export {build};
-
-// Structure: {Key: Value, ...}
-
-//Note to self: i.e. $item1 will be data!
